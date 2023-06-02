@@ -133,6 +133,7 @@ a{
 }
 
 .sectionInfo img{
+    animation: showImage 2s ease-in-out;
     width: 650px;
 }
 
@@ -274,4 +275,14 @@ footer{
     font-size: 0.900rem;
     margin-top: 40px;
     text-align: center;
+}
+
+@keyframes showImage {
+    0%{
+        transform: translateX(-300px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
 }
